@@ -1,8 +1,8 @@
 <?php
 /**
- * understrap functions and definitions
+ * natalia functions and definitions
  *
- * @package understrap
+ * @package natalia
  */
 
 /**

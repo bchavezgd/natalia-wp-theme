@@ -1,13 +1,13 @@
 <?php
 /**
  * Set the content width based on the theme's design and stylesheet.
- * @package understrap
+ * @package natalia
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'understrap_setup' ) ) :
+if ( ! function_exists( 'natalia_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,15 +15,15 @@ if ( ! function_exists( 'understrap_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function understrap_setup() {
+function natalia_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on understrap, use a find and replace
-	 * to change 'understrap' to the name of your theme in all the template files
+	 * If you're building a theme based on natalia, use a find and replace
+	 * to change 'natalia' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'understrap', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'natalia', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -45,7 +45,7 @@ function understrap_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'understrap' ),
+		'primary' => __( 'Primary Menu', 'natalia' ),
 	) );
 
 	/*
@@ -70,7 +70,7 @@ function understrap_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'understrap_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'natalia_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
@@ -78,14 +78,14 @@ function understrap_setup() {
 	// Set up the Wordpress Theme logo feature.
 	add_theme_support('custom-logo');
 }
-endif; // understrap_setup
-add_action( 'after_setup_theme', 'understrap_setup' );
+endif; // natalia_setup
+add_action( 'after_setup_theme', 'natalia_setup' );
 
 /**
 * Adding the Read more link to excerpts
 */
 /*function new_excerpt_more( $more ) {
-	return ' <p><a class="read-more btn btn-default" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'understrap') . '</a></p>';
+	return ' <p><a class="read-more btn btn-default" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'natalia') . '</a></p>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );*/
 /* Removes the ... from the excerpt read more link */
@@ -98,6 +98,6 @@ add_filter( 'excerpt_more', 'custom_excerpt_more' );
 
 function all_excerpts_get_more_link($post_excerpt) {
 
-    return $post_excerpt . ' [...]<p><a class="btn btn-secondary understrap-read-more-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More...', 'understrap')  . '</a></p>';
+    return $post_excerpt . ' [...]<p><a class="btn btn-secondary natalia-read-more-link" href="'. get_permalink( get_the_ID() ) . '">' . __('Read More...', 'natalia')  . '</a></p>';
 }
 add_filter('wp_trim_excerpt', 'all_excerpts_get_more_link');

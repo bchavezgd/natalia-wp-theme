@@ -3,7 +3,7 @@ Start talking: [![Gitter](https://img.shields.io/gitter/room/holger1411/understr
 ## About
 
 I’m a huge fan of Underscores, Bootstrap, and Sass. Why not combine these into a solid WordPress Theme Framework?
-That’s what UnderStrap is. 
+That’s what UnderStrap is.
 You can use it as starter theme and build your own theme on top of it. Or you use it as parent theme and create your own child theme for UnderStrap.
 
 At the moment, UnderStrap is in a very early stage. But if you wan’t, feel free to use it for your own WordPress theme!
@@ -21,7 +21,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 ## Changelog
             - ** 0.4.8 Pre-Release **
-                  - Removing Bower and replace the dependency managment with npm
+                  - Removing Bower and replace the dependency management with npm
                   - Update to Bootstrap 4 Alpha 4
 
             - ** 0.4.7 Aug. 15the 2016 **
@@ -38,7 +38,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
             - ** 0.4.5 Jun. 20th 2016 **
                   - Adding right sanitizing function for customizer
                   - Fixing some escaping problems
-                  - Removing "add script" customizer function 
+                  - Removing "add script" customizer function
                   - Calling all sidebars with "get_sidebar"
                   - Load hero area on index.php conditionally
                   - Remove unused code, files and dependencies
@@ -89,7 +89,7 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
             - ** 0.3.4 SEP. 9th 2015**
                    - Adding basic WooCommerce support
                    - Cleanup for submitting to wordpress.org
-                   - Removing _s SASS ... no need for basic styling. Thats Bootstrap´s job.
+                   - Removing \_s SASS ... no need for basic styling. Thats Bootstrap´s job.
 
 
             - ** 0.3.1 AUG. 12th 2015**
@@ -136,13 +136,13 @@ http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 
 ## Starter Theme + HTML Framework = WordPress Theme Framework
 
-The _s theme is a good starting point to develop a WordPress theme. But it is “just” a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
+The \_s theme is a good starting point to develop a WordPress theme. But it is “just” a raw starter theme. That means it outputs all the WordPress stuff correctly but without any layout or design.
 Why not add a well known and supported layout framework to have a solid, clean and responsive foundation? That’s where Bootstrap comes in.
 
 ## Confused by All the CSS and Sass Files?
 
 Some basics about the Sass and CSS files that come with UnderStrap:
-- The theme itself uses the `/style.css`file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
+- The theme itself uses the `/style.css` file just to identify the theme inside of WordPress. The file is not loaded by the theme and does not include any styles.
 - The `/css/theme.css` and it´s minified little brother `/css/theme.min.css` file(s) provides all styles. It is composed of five different SCSS sets and one variable file at `/sass/theme.scss`:
 
                   - 1 "theme/theme_variables";  // <--------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here

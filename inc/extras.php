@@ -4,7 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package understrap
+ * @package natalia
  */
 /**
  * Adds custom classes to the array of body classes.
@@ -12,7 +12,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function understrap_body_classes( $classes ) {
+function natalia_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -23,7 +23,7 @@ function understrap_body_classes( $classes ) {
 	}
 	return $classes;
 }
-add_filter( 'body_class', 'understrap_body_classes' );
+add_filter( 'body_class', 'natalia_body_classes' );
 
 // Removes tag class from the body_class array to avoid Bootstrap markup styling issues.
 

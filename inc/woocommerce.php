@@ -3,7 +3,7 @@
  * Add WooCommerce support
  *
  *
- * @package understrap
+ * @package natalia
  */
 
 add_action( 'after_setup_theme', 'woocommerce_support' );
